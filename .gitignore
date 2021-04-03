@@ -3,3 +3,7 @@ obj/
 *.exe
 .vscode/
 C++/
+*.sln
+*.vcxproj
+*.vcxproj.*
+v16/
