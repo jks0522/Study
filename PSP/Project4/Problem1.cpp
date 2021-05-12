@@ -68,9 +68,9 @@ int solve(vector<int> foodTimes, long long k) {
      * 이를 k가 0보다 작거나 같을 때까지 반복한다
      */
     for(int i = 0; i < size; i++) {
-        if(k - ((timesSort.top().time - minus) * (size - i)) <= 0)
+        if(k - ((long long)(timesSort.top().time - minus) * (size - i)) <= 0)
             break;
-        k -= ((timesSort.top().time - minus) * (size - i));
+        k -= ((long long)(timesSort.top().time - minus) * (size - i));
         minus = timesSort.top().time;
         timesSort.pop();    // 음식 하나를 다 먹어치웠으므로 pop()해서 없애준다
     }
