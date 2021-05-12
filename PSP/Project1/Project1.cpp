@@ -55,7 +55,7 @@ int main(void)
 		cin >> friends[i];	// 친구가 낸 모양을 문자열로 받아 friends에 저장
 	}
     
-    clock_t start = clock();	// 입력을 다 받은 후 시간 시간 저장
+    clock_t start = clock();	// 입력을 다 받은 후 시작 시간 저장
 
 	// 전남이의 총 점수를 구하기 위한 반복문
 	// 한 명당 r라운드 까지 match함수를 통해 결과를 score에 저장. 총 n명을 다 상대할 때까지 반복.
