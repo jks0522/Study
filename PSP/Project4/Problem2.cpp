@@ -1,15 +1,16 @@
 #include <iostream>
-#include <time.h>
 #include <vector>
+
 
 using namespace std;
 
 vector<vector<int>> board;
 
-class Robot {
-public:
-    int x1, x2, y1, y2;
+int dx[] = {-1, 1, 0, 0};
+int dy[] = {0, 0, -1, 1};
 
+struct Robot{
+    int x1,y1,x2,y2;
     Robot(int x1, int y1, int x2, int y2) {
         this->x1 = x1;
         this->y1 = y1;
@@ -17,31 +18,26 @@ public:
         this->y2 = y2;
     }
 
-    void moveUp() {
-        y1--;
-        y2--;
+    void Move(int d) {
+        x1 += dx[d];
+        y1 += dy[d];
+        x2 += dx[d];
+        y2 += dy[d];
     }
 
-    void moveDown() {
-        y1++;
-        y2++;
-    }
-
-    void moveRight() {
-        x1++;
-        x2++;
-    }
-
-    void moveLeft() {
-        x1--;
-        x2--;
+    void Rotate(int d) {
+        
     }
 };
 
-int solve(vector<vector<int>> board) {
+int bfs(vector<int>& distance, vector<int>& parent) {
+    
+}
+
+int solve(vector<vector<int>>& board) {
     int answer = 0;
 
-    board[]
+    
 
     return answer;
 }
