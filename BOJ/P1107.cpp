@@ -39,6 +39,11 @@ void solve(const vector<int>& goal, const vector<bool>& isBroken, vector<int>& s
         if(!isBroken[i]) {
             selected.push_back(i);
             solve(goal, isBroken, selected);
+            sNum = vtoi(selected);
+            if(sNum > gNum) {
+                selected.pop_back();
+                return;
+            }
             selected.pop_back();
         }
     }
