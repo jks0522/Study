@@ -12,7 +12,7 @@ int tiling(int n)
     if(ret != 0) return ret;
 
     ret = tiling(n-2) + tiling(n-1);
-    return ret;
+    return ret % 10007;
 }
 
 int main(void)
